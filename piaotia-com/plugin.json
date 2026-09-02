@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "飘天文学",
+    "author": "vBook",
+    "version": 1,
+    "source": "https://www.piaotia.com",
+    "description": "阅读飘天文学的中文网络小说",
+    "locale": "zh-CN",
+    "regexp": "(?:www\\.)?piaotia\\.com/bookinfo/\\d+/\\d+\\.html(?:[?#].*)?$",
+    "type": "novel",
+    "nsfw": false,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "explore": "explore.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "域名",
+      "default": "https://www.piaotia.com",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}
