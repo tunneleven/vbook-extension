@@ -8,23 +8,25 @@
       "name": "Xiaoshuo TW",
       "author": "vBook",
       "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/xiaoshuo-tw/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://www.xiaoshuo.com.tw",
       "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/xiaoshuo-tw/icon.png",
       "description": "Đọc tiểu thuyết tiếng Trung phồn thể trên Xiaoshuo TW",
       "type": "chinese_novel",
-      "locale": "zh-TW"
+      "locale": "zh-TW",
+      "language": "javascript"
     },
     {
       "name": "Piaotia",
       "author": "vBook",
       "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/piaotia-com/plugin.zip",
-      "version": 1,
+      "version": 2,
       "source": "https://www.piaotia.com",
       "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/piaotia-com/icon.png",
       "description": "Đọc tiểu thuyết tiếng Trung trên Piaotia",
       "type": "chinese_novel",
-      "locale": "zh-CN"
+      "locale": "zh-CN",
+      "language": "javascript"
     }
   ]
 }

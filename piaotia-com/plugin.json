@@ -2,10 +2,11 @@
   "metadata": {
     "name": "Piaotia",
     "author": "vBook",
-    "version": 1,
+    "version": 2,
     "source": "https://www.piaotia.com",
     "description": "Đọc tiểu thuyết tiếng Trung trên Piaotia",
     "locale": "zh-CN",
+    "language": "javascript",
     "regexp": "(?:www\\.)?piaotia\\.com/bookinfo/\\d+/\\d+\\.html(?:[?#].*)?$",
     "type": "chinese_novel",
     "nsfw": false,
