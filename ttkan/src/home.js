@@ -26,6 +26,10 @@ function execute() {
             title: "都市",
             input: novelListPath("dushi", "*", "1", "18"),
             script: "search.js"
-        }
+        },
+        { title: "总排行榜", input: "/novel/rank", script: "search.js" },
+        { title: "玄幻排行", input: "/novel/rank/xuanhuan", script: "search.js" },
+        { title: "都市排行", input: "/novel/rank/dushi", script: "search.js" },
+        { title: "仙侠排行", input: "/novel/rank/xianxia", script: "search.js" }
     ]);
 }

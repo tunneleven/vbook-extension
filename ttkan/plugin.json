@@ -1,13 +1,14 @@
 {
   "metadata": {
     "name": "TTKan",
-    "author": "tunneleven",
-    "version": 1,
+    "author": "vBook",
+    "version": 2,
     "source": "https://cn.ttkan.co",
-    "description": "从天天看小说搜索并阅读中文网络小说",
+    "description": "Đọc tiểu thuyết tiếng Trung trên TTKan",
     "locale": "zh-CN",
+    "language": "javascript",
     "regexp": "(?:(?:www|cn|tw)\\.)?ttkan\\.co/novel/chapters/[^/?#]+/?$",
-    "type": "novel",
+    "type": "chinese_novel",
     "nsfw": false,
     "encrypt": false
   },

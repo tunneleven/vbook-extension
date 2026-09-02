@@ -48,6 +48,13 @@ function execute(query, page) {
     page = cleanText(page);
 
     try {
+        let rankInput = isRankPath(page) ? page : (isRankPath(query) ? query : "");
+        if (rankInput !== "") {
+            let rankResponse = fetch(siteUrl(rankInput));
+            if (!rankResponse.ok) return Response.error("HTTP " + rankResponse.status);
+            return Response.success(rankItems(rankResponse.html()), "");
+        }
+
         if (page !== "" && (isApiPath(page) || categoryPath(page, "1") !== "")) {
             let pageUrl = isApiPath(page) ? page : categoryPath(page, page);
             let result = readJson(pageUrl);

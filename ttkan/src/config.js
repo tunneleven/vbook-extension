@@ -130,6 +130,47 @@ function categoryPath(input, page) {
     return novelListPath(slug, filter, number, 18);
 }
 
+function isRankPath(value) {
+    return /\/novel\/rank(?:\/[^/?#]+)?\/?(?:[?#].*)?$/i.test(String(value || ""));
+}
+
+function rankItems(doc) {
+    let items = [];
+    let cards = doc.select(".rank_list > div");
+    for (let i = 0; i + 1 < cards.size(); i += 2) {
+        let coverBlock = cards.get(i);
+        let infoBlock = cards.get(i + 1);
+        let name = firstText(infoBlock, "h2");
+        let link = firstAttr(infoBlock, "h2 a", "href");
+        if (link === "") link = firstAttr(coverBlock, "a", "href");
+        let cover = firstAttr(coverBlock, "amp-img", "src");
+        let author = "";
+        let category = "";
+        let status = "";
+
+        infoBlock.select("ul > li").forEach(function (item) {
+            let text = cleanText(item.text());
+            if (/^作者\s*[：:]/i.test(text)) author = withoutPrefix(text, "作者");
+            if (/^(?:类别|類別)\s*[：:]/i.test(text)) category = withoutPrefix(text, "(?:类别|類別)");
+            if (/^(?:状态|狀態)\s*[：:]/i.test(text)) status = withoutPrefix(text, "(?:状态|狀態)");
+        });
+
+        if (name !== "" && link !== "") {
+            let description = author;
+            if (category !== "") description = description === "" ? category : description + "\n" + category;
+            items.push({
+                name: name,
+                cover: assetUrl(cover),
+                link: siteUrl(link),
+                description: description,
+                tag: status,
+                host: BASE_URL
+            });
+        }
+    }
+    return items;
+}
+
 function readJson(value) {
     let response = fetch(siteUrl(value));
     if (!response.ok) return { error: "HTTP " + response.status };
