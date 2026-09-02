@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "name": "繁體小說網",
+    "author": "vBook",
+    "version": 1,
+    "source": "https://www.xiaoshuo.com.tw",
+    "description": "繁體小說網的網路小說閱讀擴充功能",
+    "locale": "zh-TW",
+    "regexp": "(?:www\\.)?xiaoshuo\\.com\\.tw/\\d+/?$",
+    "type": "novel",
+    "nsfw": false,
+    "encrypt": true
+  },
+  "script": {
+    "home": "home.js",
+    "explore": "explore.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "網域",
+      "default": "https://www.xiaoshuo.com.tw",
+      "mode": "input",
+      "format": "text"
+    }
+  }
+}
