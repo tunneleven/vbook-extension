@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "author": "tunneleven",
+    "description": "vBook extension cho piaotia.com"
+  },
+  "data": [
+    {
+      "name": "飘天文学",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/feature/piaotia-com/piaotia-com/plugin.zip",
+      "version": 1,
+      "source": "https://www.piaotia.com",
+      "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/feature/piaotia-com/piaotia-com/icon.png",
+      "description": "阅读飘天文学的中文网络小说",
+      "type": "novel",
+      "locale": "zh-CN"
+    }
+  ]
+}
