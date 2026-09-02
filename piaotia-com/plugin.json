@@ -4,10 +4,10 @@
     "author": "vBook",
     "version": 1,
     "source": "https://www.piaotia.com",
-    "description": "阅读飘天文学的中文网络小说",
+    "description": "Đọc tiểu thuyết tiếng Trung trên Piaotia",
     "locale": "zh-CN",
     "regexp": "(?:www\\.)?piaotia\\.com/bookinfo/\\d+/\\d+\\.html(?:[?#].*)?$",
-    "type": "novel",
+    "type": "chinese_novel",
     "nsfw": false,
     "encrypt": false
   },
@@ -22,7 +22,7 @@
   },
   "config": {
     "DOMAIN": {
-      "title": "域名",
+      "title": "Tên miền",
       "default": "https://www.piaotia.com",
       "mode": "input",
       "format": "text"
