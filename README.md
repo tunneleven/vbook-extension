@@ -14,3 +14,4 @@ https://raw.githubusercontent.com/tunneleven/vbook-extension/main/plugin.json
 
 - `xiaoshuo-tw` — Xiaoshuo TW (`xiaoshuo.com.tw`)
 - `piaotia-com` — Piaotia (`piaotia.com`)
+- `ttkan` — TTKan / 天天看小说 (`ttkan.co`)

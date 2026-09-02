@@ -25,6 +25,17 @@
       "description": "阅读飘天文学的中文网络小说",
       "type": "novel",
       "locale": "zh-CN"
+    },
+    {
+      "name": "TTKan",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/ttkan/plugin.zip",
+      "version": 1,
+      "source": "https://cn.ttkan.co",
+      "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/ttkan/icon.png",
+      "description": "从天天看小说搜索并阅读中文网络小说",
+      "type": "novel",
+      "locale": "zh-CN"
     }
   ]
 }

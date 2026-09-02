@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "name": "TTKan",
+    "author": "tunneleven",
+    "version": 1,
+    "source": "https://cn.ttkan.co",
+    "description": "从天天看小说搜索并阅读中文网络小说",
+    "locale": "zh-CN",
+    "regexp": "(?:(?:www|cn|tw)\\.)?ttkan\\.co/novel/chapters/[^/?#]+/?$",
+    "type": "novel",
+    "nsfw": false,
+    "encrypt": false
+  },
+  "script": {
+    "home": "home.js",
+    "explore": "explore.js",
+    "genre": "genre.js",
+    "search": "search.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js"
+  },
+  "config": {
+    "DOMAIN": {
+      "title": "域名",
+      "subtitle": "选择天天看小说镜像",
+      "default": "https://cn.ttkan.co",
+      "values": [
+        "https://cn.ttkan.co",
+        "https://www.ttkan.co",
+        "https://tw.ttkan.co"
+      ],
+      "mode": "select",
+      "format": "single"
+    }
+  }
+}
