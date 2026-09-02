@@ -4,10 +4,10 @@
     "author": "vBook",
     "version": 1,
     "source": "https://www.xiaoshuo.com.tw",
-    "description": "繁體小說網的網路小說閱讀擴充功能",
+    "description": "Đọc tiểu thuyết tiếng Trung phồn thể trên Xiaoshuo TW",
     "locale": "zh-TW",
     "regexp": "(?:www\\.)?xiaoshuo\\.com\\.tw/\\d+/?$",
-    "type": "novel",
+    "type": "chinese_novel",
     "nsfw": false,
     "encrypt": false
   },
@@ -22,7 +22,7 @@
   },
   "config": {
     "DOMAIN": {
-      "title": "網域",
+      "title": "Tên miền",
       "default": "https://www.xiaoshuo.com.tw",
       "mode": "input",
       "format": "text"
