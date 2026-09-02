@@ -12,5 +12,5 @@ https://raw.githubusercontent.com/tunneleven/vbook-extension/main/plugin.json
 
 ## Extensions
 
-- `xiaoshuo-tw` — 繁體小說網 (`xiaoshuo.com.tw`)
-- `piaotia-com` — 飘天文学 (`piaotia.com`)
+- `xiaoshuo-tw` — Xiaoshuo TW (`xiaoshuo.com.tw`)
+- `piaotia-com` — Piaotia (`piaotia.com`)

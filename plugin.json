@@ -5,7 +5,7 @@
   },
   "data": [
     {
-      "name": "繁體小說網",
+      "name": "Xiaoshuo TW",
       "author": "vBook",
       "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/xiaoshuo-tw/plugin.zip",
       "version": 1,
@@ -16,7 +16,7 @@
       "locale": "zh-TW"
     },
     {
-      "name": "飘天文学",
+      "name": "Piaotia",
       "author": "vBook",
       "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/piaotia-com/plugin.zip",
       "version": 1,
