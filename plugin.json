@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "author": "tunneleven",
+    "description": "Kho extension vBook cho các nguồn tiểu thuyết tiếng Trung"
+  },
+  "data": [
+    {
+      "name": "繁體小說網",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/xiaoshuo-tw/plugin.zip",
+      "version": 1,
+      "source": "https://www.xiaoshuo.com.tw",
+      "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/xiaoshuo-tw/icon.png",
+      "description": "繁體小說網的網路小說閱讀擴充功能",
+      "type": "novel",
+      "locale": "zh-TW"
+    },
+    {
+      "name": "飘天文学",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/piaotia-com/plugin.zip",
+      "version": 1,
+      "source": "https://www.piaotia.com",
+      "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/piaotia-com/icon.png",
+      "description": "阅读飘天文学的中文网络小说",
+      "type": "novel",
+      "locale": "zh-CN"
+    }
+  ]
+}

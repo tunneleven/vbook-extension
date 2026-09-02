@@ -9,7 +9,7 @@
     "regexp": "(?:www\\.)?xiaoshuo\\.com\\.tw/\\d+/?$",
     "type": "novel",
     "nsfw": false,
-    "encrypt": true
+    "encrypt": false
   },
   "script": {
     "home": "home.js",
