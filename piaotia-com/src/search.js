@@ -20,10 +20,11 @@ function execute(query, page) {
             if (link.isEmpty()) return;
             let status = cells.get(5).text();
             if (completedOnly && !isCompletedStatus(status)) return;
+            let bookUrl = absoluteUrl(url, link.first().attr("href"));
             items.push({
                 name: link.first().text(),
-                cover: "",
-                link: absoluteUrl(url, link.first().attr("href")),
+                cover: bookCoverUrl(bookUrl),
+                link: bookUrl,
                 description: cells.get(1).text() + " · " + cells.get(2).text(),
                 tag: status
             });
@@ -44,10 +45,11 @@ function execute(query, page) {
             let link = links.first();
             let href = link.attr("href");
             let captions = row.select(".b_caption p");
+            let bookUrl = normalizeUrl(href);
             results.push({
                 name: link.text(),
-                cover: "",
-                link: normalizeUrl(href),
+                cover: bookCoverUrl(bookUrl),
+                link: bookUrl,
                 description: captions.isEmpty() ? "" : captions.first().text(),
                 tag: ""
             });

@@ -30,6 +30,15 @@ function firstAttr(doc, selector, attribute) {
     return elements.isEmpty() ? "" : elements.first().attr(attribute);
 }
 
+function bookCoverUrl(url) {
+    let normalized = normalizeUrl(url);
+    let match = normalized.match(/\/(\d+)\/?(?:[?#].*)?$/);
+    if (!match) return "";
+    let id = parseInt(match[1], 10);
+    if (isNaN(id)) return "";
+    return BASE_URL + "/files/article/image/" + Math.floor(id / 1000) + "/" + id + "/" + id + "s.jpg";
+}
+
 function ensureBookUrl(url) {
     return /\/\d+$/.test(url) ? url + "/" : url;
 }
