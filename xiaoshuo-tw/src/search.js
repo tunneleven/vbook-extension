@@ -30,10 +30,11 @@ function execute(query, page) {
                 let value = score.first().text();
                 if (value !== "") description = description === "" ? value : description + " · " + value;
             }
+            let bookUrl = absoluteUrl(link.attr("href"));
             topItems.push({
                 name: link.text(),
-                cover: "",
-                link: absoluteUrl(link.attr("href")),
+                cover: bookCoverUrl(bookUrl),
+                link: bookUrl,
                 description: description,
                 tag: "完本"
             });
@@ -121,9 +122,11 @@ function execute(query, page) {
             }
             if (status === "" && nameIndex > 0) status = cells.get(0).text();
 
+            let bookUrl = absoluteUrl(link);
             items.push({
                 name: name,
-                link: absoluteUrl(link),
+                cover: bookCoverUrl(bookUrl),
+                link: bookUrl,
                 description: latest.replace(/^\s+|\s+$/g, ""),
                 tag: status.replace(/^\s+|\s+$/g, "")
             });

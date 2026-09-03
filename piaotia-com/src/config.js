@@ -22,6 +22,13 @@ function absoluteUrl(base, href) {
     return String(base).replace(/[^\/]*$/, "") + href;
 }
 
+function bookCoverUrl(url) {
+    let normalized = normalizeUrl(url);
+    let match = normalized.match(/\/bookinfo\/(\d+)\/(\d+)\.html/i);
+    if (!match) return "";
+    return BASE_URL + "/files/article/image/" + match[1] + "/" + match[2] + "/" + match[2] + "s.jpg";
+}
+
 function tocUrl(url) {
     let normalized = normalizeUrl(url);
     let match = normalized.match(/\/bookinfo\/(\d+)\/(\d+)\.html/i);

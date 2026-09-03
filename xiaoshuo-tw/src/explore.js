@@ -33,9 +33,11 @@ function execute() {
             if (bookLinks.isEmpty()) return;
             let chapterLinks = cells.get(2).select("a");
             let chapter = chapterLinks.isEmpty() ? "" : chapterLinks.first().text();
+            let link = absoluteUrl(bookLinks.first().attr("href"));
             latest.push({
                 name: bookLinks.first().text(),
-                link: absoluteUrl(bookLinks.first().attr("href")),
+                cover: bookCoverUrl(link),
+                link: link,
                 description: chapter,
                 tag: cells.get(0).text()
             });
@@ -51,9 +53,11 @@ function execute() {
             let bookLinks = cells.get(1).select("a");
             if (bookLinks.isEmpty()) return;
             let author = cells.size() > 2 ? cells.get(2).text() : "";
+            let link = absoluteUrl(bookLinks.first().attr("href"));
             newItems.push({
                 name: bookLinks.first().text(),
-                link: absoluteUrl(bookLinks.first().attr("href")),
+                cover: bookCoverUrl(link),
+                link: link,
                 description: author,
                 tag: cells.get(0).text()
             });
@@ -66,13 +70,15 @@ function execute() {
             title: "本站推薦",
             subtitle: "熱門小說",
             type: "horizontal_list",
+            shape: "book",
             items: recommended
         },
         {
             id: "latest",
             title: "最近更新",
             subtitle: "最近更新的小說",
-            type: "list",
+            type: "grid",
+            shape: "book",
             items: latest,
             more: { type: "list", name: "最近更新", script: "search.js", input: "/top/lastupdate/", data: "" }
         },
@@ -80,7 +86,8 @@ function execute() {
             id: "new",
             title: "最新入庫",
             subtitle: "新加入的小說",
-            type: "list",
+            type: "grid",
+            shape: "book",
             items: newItems,
             more: { type: "list", name: "最新入庫", script: "search.js", input: "/top/postdate/", data: "" }
         }
