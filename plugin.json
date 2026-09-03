@@ -27,6 +27,18 @@
       "type": "chinese_novel",
       "locale": "zh-CN",
       "language": "javascript"
+    },
+    {
+      "name": "TTKan",
+      "author": "vBook",
+      "path": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/ttkan/plugin.zip",
+      "version": 2,
+      "source": "https://cn.ttkan.co",
+      "icon": "https://raw.githubusercontent.com/tunneleven/vbook-extension/main/ttkan/icon.png",
+      "description": "Đọc tiểu thuyết tiếng Trung trên TTKan",
+      "type": "chinese_novel",
+      "locale": "zh-CN",
+      "language": "javascript"
     }
   ]
 }
