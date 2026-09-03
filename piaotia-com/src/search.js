@@ -4,22 +4,29 @@ function execute(query, page) {
     page = String(page || "1");
 
     if (query.indexOf("/") === 0 || query.indexOf("http") === 0) {
+        // Piaotia has no completed ranking endpoint; keep all-time rank order and filter status.
+        let completedOnly = isCompletedPath(query);
         let base = query.indexOf("http") === 0 ? normalizeUrl(query) : BASE_URL + query;
         let url = base.indexOf("{page}") !== -1 ? base.replace("{page}", page) : base;
         let response = fetch(url);
         if (!response.ok) return Response.error("HTTP " + response.status);
         let doc = response.html("gbk");
         let rows = doc.select("#centerm table.grid tr:has(td a[href*=bookinfo])");
-        let items = rows.map(function (row) {
+        let items = [];
+        rows.forEach(function (row) {
             let cells = row.select("td");
-            let link = cells.get(0).select("a").first();
-            return {
-                name: link.text(),
+            if (cells.size() < 6) return;
+            let link = cells.get(0).select("a");
+            if (link.isEmpty()) return;
+            let status = cells.get(5).text();
+            if (completedOnly && !isCompletedStatus(status)) return;
+            items.push({
+                name: link.first().text(),
                 cover: "",
-                link: absoluteUrl(url, link.attr("href")),
+                link: absoluteUrl(url, link.first().attr("href")),
                 description: cells.get(1).text() + " · " + cells.get(2).text(),
-                tag: cells.get(5).text()
-            };
+                tag: status
+            });
         });
         let nextPage = doc.select("#pagelink a.next").isEmpty() ? "" : (parseInt(page, 10) + 1).toString();
         return Response.success(items, nextPage);

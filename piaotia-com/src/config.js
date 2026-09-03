@@ -37,3 +37,11 @@ function categoryPath(name) {
     }
     return "";
 }
+
+function isCompletedPath(value) {
+    return /[?&]completed=1(?:[&#]|$)/i.test(String(value || ""));
+}
+
+function isCompletedStatus(value) {
+    return /(?:已完成|已完本|已完结|已完結|完结|完結)/i.test(String(value || ""));
+}
