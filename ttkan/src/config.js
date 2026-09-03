@@ -134,7 +134,16 @@ function isRankPath(value) {
     return /\/novel\/rank(?:\/[^/?#]+)?\/?(?:[?#].*)?$/i.test(String(value || ""));
 }
 
-function rankItems(doc) {
+function isCompletedRankPath(value) {
+    return /[?&]completed=1(?:[&#]|$)/i.test(String(value || ""));
+}
+
+function isCompletedStatus(value) {
+    return /(?:已完成|已完本|已完结|已完結|完结|完結)/i.test(String(value || ""));
+}
+
+function rankItems(doc, completedOnly) {
+    // TTKan exposes one rank page; completed results are a status-filtered view of it.
     let items = [];
     let cards = doc.select(".rank_list > div");
     for (let i = 0; i + 1 < cards.size(); i += 2) {
@@ -154,6 +163,8 @@ function rankItems(doc) {
             if (/^(?:类别|類別)\s*[：:]/i.test(text)) category = withoutPrefix(text, "(?:类别|類別)");
             if (/^(?:状态|狀態)\s*[：:]/i.test(text)) status = withoutPrefix(text, "(?:状态|狀態)");
         });
+
+        if (completedOnly && !isCompletedStatus(status)) continue;
 
         if (name !== "" && link !== "") {
             let description = author;

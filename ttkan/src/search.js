@@ -52,7 +52,10 @@ function execute(query, page) {
         if (rankInput !== "") {
             let rankResponse = fetch(siteUrl(rankInput));
             if (!rankResponse.ok) return Response.error("HTTP " + rankResponse.status);
-            return Response.success(rankItems(rankResponse.html()), "");
+            return Response.success(
+                rankItems(rankResponse.html(), isCompletedRankPath(rankInput)),
+                ""
+            );
         }
 
         if (page !== "" && (isApiPath(page) || categoryPath(page, "1") !== "")) {

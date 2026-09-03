@@ -15,6 +15,32 @@ function execute(query, page) {
     let response = fetch(url);
     if (!response.ok) return Response.error("HTTP " + response.status);
     let doc = response.html("gbk");
+
+    if (isTopCompletedPath(query)) {
+        // The source's fixed "熱門完本小說" block is already ranked by popularity.
+        let topItems = [];
+        doc.select(".body-content .list-top > li.list-group-item").forEach(function (el) {
+            let links = el.select("a");
+            if (links.isEmpty()) return;
+            let link = links.first();
+            let author = el.select("small");
+            let score = el.select("span.pull-right");
+            let description = author.isEmpty() ? "" : author.first().text();
+            if (!score.isEmpty()) {
+                let value = score.first().text();
+                if (value !== "") description = description === "" ? value : description + " · " + value;
+            }
+            topItems.push({
+                name: link.text(),
+                cover: "",
+                link: absoluteUrl(link.attr("href")),
+                description: description,
+                tag: "完本"
+            });
+        });
+        return Response.success(topItems, "");
+    }
+
     let items = [];
     let searchItems = doc.select(".mySearch .search-list > li.search-item");
 

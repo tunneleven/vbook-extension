@@ -34,6 +34,10 @@ function ensureBookUrl(url) {
     return /\/\d+$/.test(url) ? url + "/" : url;
 }
 
+function isTopCompletedPath(value) {
+    return /[?&]vbook=top(?:[&#]|$)/i.test(String(value || ""));
+}
+
 function listingUrl(input, page) {
     let base = /^https?:\/\//i.test(input) ? normalizeUrl(input) : absoluteUrl(input);
     let number = parseInt(String(page || "1"), 10);
