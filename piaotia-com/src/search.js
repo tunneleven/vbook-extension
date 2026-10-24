@@ -1,4 +1,6 @@
 load('config.js');
+load('gbk.js');
+
 function execute(query, page) {
     query = String(query || "");
     page = String(page || "1");
@@ -34,23 +36,33 @@ function execute(query, page) {
     }
 
     if (!query) return Response.success([], "");
-    let searchUrl = "https://cn.bing.com/search?q=" + encodeURIComponent("site:www.piaotia.com/bookinfo/ " + query);
-    let searchResponse = fetch(searchUrl, { headers: { "User-Agent": UserAgent.chrome() } });
+    let searchUrl = BASE_URL + "/modules/article/search.php";
+    let searchResponse = fetch(searchUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "searchtype=articlename&searchkey=" + gbkEncode(query)
+    });
     if (!searchResponse.ok) return Response.error("HTTP " + searchResponse.status);
-    let searchDoc = searchResponse.html();
+    let searchDoc = searchResponse.html("gbk");
+    let searchBody = searchDoc.select("body");
+    let searchText = searchBody.isEmpty() ? "" : searchBody.first().text();
+    if (/(?:Fatal error|Uncaught (?:exception|error)|RedisException|Stack trace:)/i.test(searchText)) {
+        return Response.error("Source error: " + searchText.substring(0, 180));
+    }
     let results = [];
-    searchDoc.select("li.b_algo").forEach(function (row) {
+    searchDoc.select("#centerm table.grid tr:has(td a[href*=bookinfo])").forEach(function (row) {
         let links = row.select("h2 a[href*=piaotia.com/bookinfo]");
+        if (links.isEmpty()) links = row.select("td a[href*=bookinfo]");
         if (!links.isEmpty()) {
             let link = links.first();
             let href = link.attr("href");
-            let captions = row.select(".b_caption p");
+            let cells = row.select("td");
             let bookUrl = normalizeUrl(href);
             results.push({
                 name: link.text(),
                 cover: bookCoverUrl(bookUrl),
                 link: bookUrl,
-                description: captions.isEmpty() ? "" : captions.first().text(),
+                description: cells.size() > 1 ? cells.get(1).text() : "",
                 tag: ""
             });
         }
