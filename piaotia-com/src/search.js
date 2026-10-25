@@ -67,5 +67,24 @@ function execute(query, page) {
             });
         }
     });
+    if (results.length === 0) {
+        // Piaotia redirects a search that resolves to one exact book directly to its detail page.
+        let title = searchDoc.select("#centerm h1");
+        let cover = searchDoc.select("#centerm img[src*=files/article/image]");
+        if (!title.isEmpty() && !cover.isEmpty()) {
+            let coverUrl = cover.first().attr("src");
+            let ids = coverUrl.match(/\/files\/article\/image\/(\d+)\/(\d+)\//i);
+            if (ids) {
+                let bookUrl = BASE_URL + "/bookinfo/" + ids[1] + "/" + ids[2] + ".html";
+                results.push({
+                    name: title.first().text(),
+                    cover: absoluteUrl(bookUrl, coverUrl),
+                    link: bookUrl,
+                    description: "",
+                    tag: ""
+                });
+            }
+        }
+    }
     return Response.success(results, "");
 }
