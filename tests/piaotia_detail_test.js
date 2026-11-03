@@ -58,6 +58,10 @@ function runDetail(formatHtml) {
     const result = context.execute(fixture.source);
     assert.deepEqual(calls, [fixture.source]);
     assert.equal(result.code, 0, result.message);
+    assert.equal(result.data.reviews.length, 1);
+    assert.equal(result.data.reviews[0].title, 'Reader reviews');
+    assert.equal(result.data.reviews[0].script, 'reviews.js');
+    assert.equal(result.data.reviews[0].input, 'https://www.piaotia.com/modules/article/reviews.php?aid=10475&type=all');
     assert.equal(result.data.name, '这号有毒');
     assert.equal(result.data.author, '幼儿园一把手');
     assert.match(result.data.cover, /10475s\.jpg$/);
