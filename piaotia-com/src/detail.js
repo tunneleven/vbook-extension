@@ -55,7 +55,11 @@ function execute(url) {
         tags: tags,
         genres: genres,
         suggests: [],
-        reviews: [],
+        reviews: [{
+            title: "Reader reviews",
+            input: BASE_URL + "/modules/article/reviews.php?aid=" + url.match(/\/(\d+)\.html(?:[?#].*)?$/)[1] + "&type=all",
+            script: "reviews.js"
+        }],
         comments: []
     });
 }
