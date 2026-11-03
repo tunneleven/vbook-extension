@@ -28,7 +28,7 @@ function execute(url) {
     let description = "";
     let descriptionCell = doc.select("#centerm td[width=80%][valign=top]");
     if (!descriptionCell.isEmpty()) {
-        let match = descriptionCell.first().html().match(/内容简介：<\/span><br\s*\/?>\s*([\s\S]*?)<br\s*\/?>\s*<br\s*\/?>/i);
+        let match = descriptionCell.first().html().match(/内容简介：\s*<\/span>\s*<br\s*\/?>\s*([\s\S]*?)<br\s*\/?>\s*<br\s*\/?>/i);
         if (match) description = match[1];
     }
 

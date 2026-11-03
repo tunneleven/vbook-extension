@@ -1,0 +1,167 @@
+{
+  "source": "https://www.piaotia.com/bookinfo/10/10475.html",
+  "selectors": {
+    "#centerm h1": [
+      {
+        "text": "这号有毒",
+        "html": "这号有毒",
+        "attrs": {},
+        "cells": []
+      }
+    ],
+    "#centerm img[src*=files/article/image]": [
+      {
+        "text": "",
+        "html": "",
+        "attrs": {
+          "src": "https://www.piaotia.com/files/article/image/10/10475/10475s.jpg",
+          "border": "0",
+          "width": "100",
+          "height": "125",
+          "align": "right",
+          "hspace": "5",
+          "vspace": "5"
+        },
+        "cells": []
+      }
+    ],
+    "#centerm table[width=100%][cellpadding=3]": [
+      {
+        "text": "这号有毒 类 别：网游竞技 作 者：幼儿园一把手 管 理 员： 全文长度：1533282字 最后更新：2022-05-31 文章状态：已完成 授权级别：暂未授权 首发状态：他站首发 收 藏 数：170 总推荐数：1505 本月推荐：5 收到鲜花：1",
+        "html": "\n      <tr align=\"center\">\n        <td colspan=\"4\">\n            <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n                <tr>\n                    <td width=\"80%\" align=\"center\" valign=\"middle\"><span style=\"font-size:16px; font-weight: bold; line-height:30px\"><h1>这号有毒</h1></span></td>\n                    \n\n\n                </tr>\n\n            </table>\n<br>\n</td>\n        </tr>\n      <tr>\n        <td width=\"25%\">类    别：网游竞技</td>\n        <td width=\"25%\">作    者：幼儿园一把手</td>\n        <td width=\"25%\">管 理 员：</td>\n        <td width=\"25%\">全文长度：1533282字</td>\n      </tr>\n      <tr>\n        <td>最后更新：2022-05-31</td>\n        <td>文章状态：已完成</td>\n        <td>授权级别：暂未授权</td>\n        <td>首发状态：他站首发</td>\n      </tr>\n     \n      <tr>\n\t     <td>收 藏 数：170</td>\n        <td>总推荐数：1505</td>\n        <td>本月推荐：5</td>\n        <td>收到鲜花：<span class=\"hottext\">1</span></td>\n      </tr>\n    ",
+        "attrs": {
+          "width": "100%",
+          "border": "0",
+          "cellspacing": "0",
+          "cellpadding": "3"
+        },
+        "cells": [
+          {
+            "text": "这号有毒",
+            "html": "\n            <table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n                <tr>\n                    <td width=\"80%\" align=\"center\" valign=\"middle\"><span style=\"font-size:16px; font-weight: bold; line-height:30px\"><h1>这号有毒</h1></span></td>\n                    \n\n\n                </tr>\n\n            </table>\n<br>\n",
+            "attrs": {
+              "colspan": "4"
+            }
+          },
+          {
+            "text": "这号有毒",
+            "html": "<span style=\"font-size:16px; font-weight: bold; line-height:30px\"><h1>这号有毒</h1></span>",
+            "attrs": {
+              "width": "80%",
+              "align": "center",
+              "valign": "middle"
+            }
+          },
+          {
+            "text": "类 别：网游竞技",
+            "html": "类    别：网游竞技",
+            "attrs": {
+              "width": "25%"
+            }
+          },
+          {
+            "text": "作 者：幼儿园一把手",
+            "html": "作    者：幼儿园一把手",
+            "attrs": {
+              "width": "25%"
+            }
+          },
+          {
+            "text": "管 理 员：",
+            "html": "管 理 员：",
+            "attrs": {
+              "width": "25%"
+            }
+          },
+          {
+            "text": "全文长度：1533282字",
+            "html": "全文长度：1533282字",
+            "attrs": {
+              "width": "25%"
+            }
+          },
+          {
+            "text": "最后更新：2022-05-31",
+            "html": "最后更新：2022-05-31",
+            "attrs": {}
+          },
+          {
+            "text": "文章状态：已完成",
+            "html": "文章状态：已完成",
+            "attrs": {}
+          },
+          {
+            "text": "授权级别：暂未授权",
+            "html": "授权级别：暂未授权",
+            "attrs": {}
+          },
+          {
+            "text": "首发状态：他站首发",
+            "html": "首发状态：他站首发",
+            "attrs": {}
+          },
+          {
+            "text": "收 藏 数：170",
+            "html": "收 藏 数：170",
+            "attrs": {}
+          },
+          {
+            "text": "总推荐数：1505",
+            "html": "总推荐数：1505",
+            "attrs": {}
+          },
+          {
+            "text": "本月推荐：5",
+            "html": "本月推荐：5",
+            "attrs": {}
+          },
+          {
+            "text": "收到鲜花：1",
+            "html": "收到鲜花：<span class=\"hottext\">1</span>",
+            "attrs": {}
+          }
+        ]
+      },
+      {
+        "text": "function copyToClipBoard(){ var clipBoardContent=''; clipBoardContent+='这号有毒最新章节阅读地址:'; clipBoardContent+=window.location; window.clipboardData.setData(\"Text\",clipBoardContent); alert(\"你已复制链接及标题，请粘贴到POPO/MSN/QQ等发给好友!\"); } 最新章节：新书《这个明星很想退休》已发 内容简介： 在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。 他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。 没想到的是，在他的成长道路上，一开始就遇到了难题。 如今，他首先要面对的是…… 一个一言难尽“女魔头”！ …… “这号好像有点毒啊！”路浔。 …… 【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】",
+        "html": "\n      <tr>\n        <td width=\"20%\" align=\"center\" valign=\"top\"><a title=\"点击阅读《这号有毒》\" href=\"https://www.piaotia.com/html/10/10475/\"><img src=\"/images/dian.gif\" alt=\"点击阅读这号有毒\" border=\"0\"></a>\n\t\t<a title=\"将《这号有毒》加入书架\" href=\"https://www.piaotia.com/modules/article/addbookcase.php?bid=10475\" target=\"_blank\"><img src=\"/images/jia.gif\" border=\"0\"></a>\n\t\t<div style=\"width:115px;height:28px;background:url('/images/tui.gif');cursor:pointer;\" onclick=\"javascript:window.open('/modules/article/uservote.php?id=10475&amp;num='+document.getElementById('votenum').value);\"><input name=\"votenum\" type=\"text\" id=\"votenum\" value=\"1\" size=\"3\" style=\"margin-left:32px;margin-top:4px;width:18px;height:15px;line-height:15px;\"></div>\n\t\t<a title=\"鲜花推荐--每朵鲜花需要100积分\" href=\"/modules/article/flower.php?id=10475\" target=\"_blank\"><img src=\"/images/xh.gif\" border=\"0\"></a>\n\n\n\n        <script language=\"javascript\">\nfunction copyToClipBoard(){\nvar clipBoardContent=''; \nclipBoardContent+='这号有毒最新章节阅读地址:';\nclipBoardContent+=window.location;\nwindow.clipboardData.setData(\"Text\",clipBoardContent);\nalert(\"你已复制链接及标题，请粘贴到POPO/MSN/QQ等发给好友!\");\n}\n</script>\n        <a title=\"向好友推荐本书\" onclick=\"copyToClipBoard()\" href=\"#\"><img src=\"/images/friend.gif\" border=\"0\"></a>\n        \n\n        </td><td width=\"80%\" valign=\"top\">\n<a href=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" target=\"_blank\"><img src=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" border=\"0\" width=\"100\" height=\"125\" align=\"right\" hspace=\"5\" vspace=\"5\"></a>\n<div style=\"float:left;width:460px;\">\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\n\t\t\t\n          <span class=\"hottext\">最新章节：</span><a href=\"https://www.piaotia.com/html/10/10475/10110921.html\">新书《这个明星很想退休》已发</a><br>\n\t\t  \n\t\t  <br>\n          <span class=\"hottext\">内容简介：</span><br>    在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。<br>\n    他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。<br>\n    没想到的是，在他的成长道路上，一开始就遇到了难题。<br>\n    如今，他首先要面对的是……<br>\n    一个一言难尽“女魔头”！<br>\n    ……<br>\n    “这号好像有点毒啊！”路浔。<br>\n    ……<br>\n    【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】<br>\n<br><br>\n \n\n      </div></td>\n      </tr>\n    ",
+        "attrs": {
+          "width": "100%",
+          "border": "0",
+          "cellspacing": "0",
+          "cellpadding": "3"
+        },
+        "cells": [
+          {
+            "text": "function copyToClipBoard(){ var clipBoardContent=''; clipBoardContent+='这号有毒最新章节阅读地址:'; clipBoardContent+=window.location; window.clipboardData.setData(\"Text\",clipBoardContent); alert(\"你已复制链接及标题，请粘贴到POPO/MSN/QQ等发给好友!\"); }",
+            "html": "<a title=\"点击阅读《这号有毒》\" href=\"https://www.piaotia.com/html/10/10475/\"><img src=\"/images/dian.gif\" alt=\"点击阅读这号有毒\" border=\"0\"></a>\n\t\t<a title=\"将《这号有毒》加入书架\" href=\"https://www.piaotia.com/modules/article/addbookcase.php?bid=10475\" target=\"_blank\"><img src=\"/images/jia.gif\" border=\"0\"></a>\n\t\t<div style=\"width:115px;height:28px;background:url('/images/tui.gif');cursor:pointer;\" onclick=\"javascript:window.open('/modules/article/uservote.php?id=10475&amp;num='+document.getElementById('votenum').value);\"><input name=\"votenum\" type=\"text\" id=\"votenum\" value=\"1\" size=\"3\" style=\"margin-left:32px;margin-top:4px;width:18px;height:15px;line-height:15px;\"></div>\n\t\t<a title=\"鲜花推荐--每朵鲜花需要100积分\" href=\"/modules/article/flower.php?id=10475\" target=\"_blank\"><img src=\"/images/xh.gif\" border=\"0\"></a>\n\n\n\n        <script language=\"javascript\">\nfunction copyToClipBoard(){\nvar clipBoardContent=''; \nclipBoardContent+='这号有毒最新章节阅读地址:';\nclipBoardContent+=window.location;\nwindow.clipboardData.setData(\"Text\",clipBoardContent);\nalert(\"你已复制链接及标题，请粘贴到POPO/MSN/QQ等发给好友!\");\n}\n</script>\n        <a title=\"向好友推荐本书\" onclick=\"copyToClipBoard()\" href=\"#\"><img src=\"/images/friend.gif\" border=\"0\"></a>\n        \n\n        ",
+            "attrs": {
+              "width": "20%",
+              "align": "center",
+              "valign": "top"
+            }
+          },
+          {
+            "text": "最新章节：新书《这个明星很想退休》已发 内容简介： 在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。 他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。 没想到的是，在他的成长道路上，一开始就遇到了难题。 如今，他首先要面对的是…… 一个一言难尽“女魔头”！ …… “这号好像有点毒啊！”路浔。 …… 【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】",
+            "html": "\n<a href=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" target=\"_blank\"><img src=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" border=\"0\" width=\"100\" height=\"125\" align=\"right\" hspace=\"5\" vspace=\"5\"></a>\n<div style=\"float:left;width:460px;\">\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\n\t\t\t\n          <span class=\"hottext\">最新章节：</span><a href=\"https://www.piaotia.com/html/10/10475/10110921.html\">新书《这个明星很想退休》已发</a><br>\n\t\t  \n\t\t  <br>\n          <span class=\"hottext\">内容简介：</span><br>    在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。<br>\n    他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。<br>\n    没想到的是，在他的成长道路上，一开始就遇到了难题。<br>\n    如今，他首先要面对的是……<br>\n    一个一言难尽“女魔头”！<br>\n    ……<br>\n    “这号好像有点毒啊！”路浔。<br>\n    ……<br>\n    【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】<br>\n<br><br>\n \n\n      </div>",
+            "attrs": {
+              "width": "80%",
+              "valign": "top"
+            }
+          }
+        ]
+      }
+    ],
+    "#centerm td[width=80%][valign=top]": [
+      {
+        "text": "最新章节：新书《这个明星很想退休》已发 内容简介： 在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。 他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。 没想到的是，在他的成长道路上，一开始就遇到了难题。 如今，他首先要面对的是…… 一个一言难尽“女魔头”！ …… “这号好像有点毒啊！”路浔。 …… 【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】",
+        "html": "\n<a href=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" target=\"_blank\"><img src=\"https://www.piaotia.com/files/article/image/10/10475/10475s.jpg\" border=\"0\" width=\"100\" height=\"125\" align=\"right\" hspace=\"5\" vspace=\"5\"></a>\n<div style=\"float:left;width:460px;\">\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\n\n\n\n\t\t\t\n          <span class=\"hottext\">最新章节：</span><a href=\"https://www.piaotia.com/html/10/10475/10110921.html\">新书《这个明星很想退休》已发</a><br>\n\t\t  \n\t\t  <br>\n          <span class=\"hottext\">内容简介：</span><br>    在《天尘》创建小号没多久的路浔，穿越到了这款仙侠类游戏里，成为了一名光荣的NPC。<br>\n    他发现自己穿越早了三年，本打算积蓄实力，默默地等待沙雕玩家们的大规模降临。然后，像个正常NPC一样给他们发布任务，让他们为我所用。<br>\n    没想到的是，在他的成长道路上，一开始就遇到了难题。<br>\n    如今，他首先要面对的是……<br>\n    一个一言难尽“女魔头”！<br>\n    ……<br>\n    “这号好像有点毒啊！”路浔。<br>\n    ……<br>\n    【Ps：普群封了两个，不创了，现留唯一VIP群，需全订验证，先加验证群936171107，找管理员验证后进v群。】<br>\n<br><br>\n \n\n      </div>",
+        "attrs": {
+          "width": "80%",
+          "valign": "top"
+        },
+        "cells": []
+      }
+    ]
+  }
+}
